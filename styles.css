@@ -1,0 +1,144 @@
+:root {
+  color-scheme: light;
+  --bg: #F5F5F2;
+  --panel: rgba(255, 255, 255, 0.92);
+  --line: rgba(184, 154, 99, 0.22);
+  --text: #0E1621;
+  --muted: #5E6470;
+  --accent: #B89A63;
+  --accent-strong: #8F7444;
+  --space-black: #050505;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at top center, rgba(184, 154, 99, 0.14), transparent 34%),
+    linear-gradient(180deg, #faf9f5 0%, var(--bg) 100%);
+  color: var(--text);
+}
+
+.shell {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 40px 20px 72px;
+}
+
+.hero,
+.doc-card,
+.app-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: 0 18px 60px rgba(14, 22, 33, 0.06);
+  backdrop-filter: blur(14px);
+}
+
+.hero {
+  padding: 32px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(184, 154, 99, 0.16), transparent 38%),
+    linear-gradient(135deg, rgba(14, 22, 33, 0.02), transparent 55%);
+  pointer-events: none;
+}
+
+.hero p,
+.app-card p,
+.doc-card p,
+.doc-card li {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.hero h1 {
+  margin: 0 0 12px;
+  font-size: clamp(34px, 5vw, 54px);
+  letter-spacing: 0.02em;
+  color: var(--space-black);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.app-card {
+  padding: 22px;
+}
+
+.app-card h2,
+.doc-card h1,
+.doc-card h2,
+.doc-card h3 {
+  margin-top: 0;
+  color: var(--text);
+}
+
+.link-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(184, 154, 99, 0.08);
+}
+
+.doc-card {
+  padding: 28px;
+}
+
+.doc-card ul {
+  padding-left: 22px;
+}
+
+.breadcrumbs {
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+.footer {
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: 14px;
+}
