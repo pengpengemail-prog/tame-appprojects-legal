@@ -16,3 +16,5 @@ Static GitHub Pages repository for the TAME AppProjects legal site.
 - `https://<your-pages-domain>/recipevault/privacy.html`
 - `https://<your-pages-domain>/flashmaster/privacy.html`
 - `https://<your-pages-domain>/moneymind/privacy.html`
+- `https://<your-pages-domain>/slimvideo/privacy.html`
+- `https://<your-pages-domain>/snapsweep/privacy.html`

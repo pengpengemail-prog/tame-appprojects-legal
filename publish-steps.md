@@ -22,6 +22,8 @@ Upload every file and folder from this scaffold to the repository root:
 - `recipevault/`
 - `flashmaster/`
 - `moneymind/`
+- `slimvideo/`
+- `snapsweep/`
 
 ## 3. Enable Pages
 
